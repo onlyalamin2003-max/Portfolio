@@ -13,26 +13,32 @@
 .logo h2{
     font-size: 45px;
     font-weight: 900;
+    border: 5px solid rgb(0, 0, 0)  ;
+    padding: 10px 25px;
+    border-radius: 10px;
 
 }
 .color-orange {
-    color: rgb(234, 232, 231);
+    color:rgb(255, 208, 0);
+    text-shadow: 7px 7px 9px rgba(0, 0, 0, 0.205);
 
 }
 
 .btn{
-background-color: aliceblue;
+background-color: rgb(255, 208, 0);
 border: none;
 padding: 15px 30px;
 border-radius: 5px;
 font-size: 20px;
 font-weight: bold;
-color: rgba(164, 216, 239, 0.998);
- 
+color: rgba(0, 0, 0, 0.998);
+ cursor:pointer;
 }
 /* main style */
 header {
     background-color: rgba(164, 216, 239, 0.998);
+    background: url(../images/developer.png) no-repeat, url(../images/rsz_yellow.png) no-repeat, rgba(164, 216, 239, 0.998); 
+    background-position: top left, bottom right;
 padding-top: 50px;
 }
 nav {
@@ -55,7 +61,36 @@ nav .menu{
 }
 nav .menu a{
   font-size: 23px;
-  color: Cornsilk;
+  color: rgb(0, 0, 0);
 text-decoration: none;
   
+}
+#banner {
+    /* border: 3px solid rgb(255, 251, 0); */
+    margin: 50px 40px 0 250px;
+    display: flex;
+    justify-content:space-between ;
+align-items: center;
+}
+#banner .banner-content h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    
+}
+#banner .banner-content h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+#banner .banner-content p{
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: rgb(80, 78, 78);
+    line-height: 34px;
+    max-width: 580px;
+}
+#banner .banner-image img{
+    max-width: 477px;
+    vertical-align: middle;
 }
