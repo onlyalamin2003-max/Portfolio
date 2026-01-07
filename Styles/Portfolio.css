@@ -118,7 +118,7 @@ align-items: center;
 #about .about-content{
     width: 70%;
     max-width: 1140px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     padding: 130px 155px;
     background-color:rgba(164, 216, 239, 0.998);
@@ -127,5 +127,6 @@ align-items: center;
 #about .about-content .info{
     display: flex;
    justify-content: space-around;
+   gap: 80px;
     
 }
