@@ -38,6 +38,7 @@ color: rgba(0, 0, 0, 0.998);
 .section-heading{
     text-align: center;
     max-width: 830px;
+    margin: 0 auto 60px auto;
 }
 .section-heading h2{
     font-size: 36px;
@@ -55,8 +56,11 @@ color: rgba(0, 0, 0, 0.998);
 /* main style */
 header {
     background-color: rgba(164, 216, 239, 0.998);
-    background: url(../images/developer.png) no-repeat, url(../images/rsz_yellow.png) no-repeat, rgba(164, 216, 239, 0.998); 
-    background-position: top left, bottom right;
+    background: url(../images/developer.png) , url(../images/rsz_yellow.png), rgba(164, 216, 239, 0.998); 
+    background-position: 20px 30px, bottom right;
+    background-repeat: no-repeat;
+    background-size: 90px ,auto;
+
 padding-top: 50px;
 }
 nav {
@@ -112,7 +116,7 @@ align-items: center;
     max-width: 477px;
     vertical-align: middle;
 }
-#about {
+#about , #skill {
     padding-top: 100px;
 }
 #about .about-content{
@@ -129,4 +133,155 @@ align-items: center;
    justify-content: space-around;
    gap: 80px;
     
+}
+
+
+
+#skill .skill-content{
+    width: 70%;
+    max-width: 1140px;
+    margin:auto;
+
+    background-color:rgba(164, 216, 239, 0.998);
+
+}
+#skill .skill-content .skill-box{
+    display: flex;
+   justify-content: space-around;
+   gap:0, auto;
+}
+
+#skill .skill-content .skill-box .skill-card{
+    max-width: 267px;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.998); ;      
+    /* border: 2px solid rgb(200, 200, 200); */
+    box-shadow: 0px 4px 30px 0px rgba(164, 216, 239, 0.998);
+   margin: 20px;
+}
+.skill-box .skill-card .img{
+    max-width: 44px;
+    margin-bottom: 30px;
+    text-shadow: 0px 4px 55px 0px rgb(0, 0, 0);
+}
+.skill-card h3{
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: black;
+
+}
+.skill-card p{
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(80, 78, 78);
+    display: flex;
+}
+
+#cv{
+    padding-top: 100px;
+}
+
+#cv .cv-content {
+    width: 70%;
+        max-width: 1140px;
+        margin: auto;
+        padding: 50px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px ;
+        background-color: rgba(164, 216, 239, 0.998);
+}
+.cv-content .education, .cv-content .experience{
+    flex: 1 1 48%;
+    display: flex;
+    flex-direction: column;
+}
+#cv .cv-content hr {
+    margin: 30px 0px}
+
+.cv-content .section-title{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+}
+.cv-content .cv-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.205);
+}
+.cv-card .card-title{
+font-size: 20px;
+font-weight: 600; 
+margin-bottom: 10px;
+color: black;
+}
+.cv-card .card-info {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+}
+.cv-card .card-text {
+    font-size: 15px;
+    font-weight:normal;
+    line-height: 26px;
+    margin-bottom: 10px;
+    color: black;
+}
+.cv-content .text-center {
+    text-align: center;
+}
+.cv-btn{
+    margin-top: 30px;
+    text-align: center;
+    width:100%;
+    flex: 0 0 100%;
+
+}   
+footer {
+    background-color: rgba(164, 216, 239, 0.998);
+    padding: 130px 0;
+    margin-top: 130px;
+   
+}
+footer .footer-content {
+    width: 71%;
+    max-width: 1140px;
+    margin:auto;
+    gap: 120px;
+    display:flex;
+}
+.footer-content .social {
+    flex: 1;
+}
+
+.footer-content h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: black;
+}
+footer .social p{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: rgb(80, 78, 78);
+}
+.footer-content .icon{
+    display: flex;
+}
+.footer-content .icon a{
+    margin-right: 20px;
+}
+.footer-content .form input, .footer-content .form textarea{
+    width: 500px;
+    padding: 18px 32px;
+    color: black;
+    margin-bottom: 20px;
 }
